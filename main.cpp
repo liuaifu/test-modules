@@ -1,9 +1,7 @@
-#include <iostream>
-
-
 import mymodule;
 
 int main(int argc, char** argv) {
-	print();
+	auto str = get_string();
+	print(str);
 	return 0;
 }

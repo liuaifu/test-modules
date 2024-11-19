@@ -1,4 +1,8 @@
 #pragma once
 
+#ifndef USING_MODULES
+#include <string>
+#endif
 
-void print();
+std::string get_string();
+void print(const std::string& str);

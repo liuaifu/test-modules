@@ -1,6 +1,10 @@
 module;
 
-#include "mymodule.hpp"
+#include <string>
 
 export module mymodule;
-export void print(){};
+
+export extern "C++" {
+#define USING_MODULES
+#include "mymodule.hpp"
+}
